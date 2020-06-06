@@ -24,7 +24,7 @@
 
 /**
  *  styles.css file is divided as the following:
- *  
+ *
  *  ( 01 ) - General Settings
  *  ( 02 ) - General Contents
  *  ( 03 ) - Header
@@ -140,7 +140,7 @@ body {
 
 @media (max-width: 1300px) {
   .boxed {
-    @at-root body#{&} { 
+    @at-root body#{&} {
       #full-container {
         margin: 0;
         border-radius: 0;
@@ -155,7 +155,7 @@ body {
     }
   }
 } // < 1300px width
-  
+
 
 /* Custom Default Content Width */
 @media (min-width: 1200px) {
@@ -249,7 +249,7 @@ h6 {
     &:hover {
       color: $body-color;
     }
-  } 
+  }
 }
 
 h4,
@@ -306,7 +306,7 @@ h6.main-heading + .subheader {
   }
 }
 
-h5.subheader, 
+h5.subheader,
 h6.subheader {
   font-weight: 400;
 }
@@ -403,7 +403,7 @@ form {
 
     & + .form-group {
       margin-top: 18px;
-    }    
+    }
   }
 
   &.form-inline {
@@ -462,7 +462,7 @@ select.form-control:focus {
 button:focus,
 button.form-control:focus {
   box-shadow: none;
-  border-color: transparent;    
+  border-color: transparent;
 }
 
 
@@ -517,7 +517,7 @@ select.error {
   &:focus {
     box-shadow: inset 0 0 0 2px #f33;
     // border-color: #f33;
-    background: #fff;    
+    background: #fff;
   }
 }
 
@@ -567,7 +567,7 @@ input[type="submit"].form-control:focus {
  * ( 02 ) - General Contents
  * -------------------------------------------------------------------------------
  *
- *  This part contains the basic general contents like box preview, image  
+ *  This part contains the basic general contents like box preview, image
  *  preview, flat section, parallax section .. etc.
  *
  * ------
@@ -623,7 +623,7 @@ input[type="submit"].form-control:focus {
     h2 {
       width: 85%;
     }
-    
+
     .description,
     p {
       width: 70%;
@@ -674,13 +674,13 @@ input[type="submit"].form-control:focus {
     .md-text-center {
 
     }
-    
+
     .description {
 
     }
   }
 } // < 992px width
-  
+
 
 @media (max-width: 768px) {
   .section-title {
@@ -816,7 +816,7 @@ input[type="submit"].form-control:focus {
     &,
     .overlay-inner {
       // opacity: 0;
-      // visibility: hidden;     
+      // visibility: hidden;
       transition: all 0.3s ease;
     }
 
@@ -865,7 +865,7 @@ input[type="submit"].form-control:focus {
     height: 100%;
     background: no-repeat top center / cover;
     transition: all 0.4s ease;
-  }  
+  }
 }
 
 
@@ -909,7 +909,7 @@ input[type="submit"].form-control:focus {
         &::after {
           transform: scale(1.05);
           opacity: 1;
-        }     
+        }
       }
     }
   }
@@ -980,7 +980,7 @@ input[type="submit"].form-control:focus {
   display: inline-flex;
   align-items: center;
   text-align: left;
-  
+
   i {
     position: relative;
     display: inline-flex;
@@ -1023,7 +1023,7 @@ input[type="submit"].form-control:focus {
     color: #fff;
     transition: all 0.2s !important;
   }
-  
+
 
   &:hover {
     i {
@@ -1032,7 +1032,7 @@ input[type="submit"].form-control:focus {
       &::after {
         transform: scale(1.02);
         opacity: 1;
-      }     
+      }
     }
 
     .title {
@@ -1150,7 +1150,7 @@ input[type="submit"].form-control:focus {
 [class*="divider-"] { // :not([class*="divider-container"])
   display: block;
   overflow: hidden;
-  clear: both;  
+  clear: both;
 }
 
 .divider-140 { height: 140px; }
@@ -1239,13 +1239,13 @@ input[type="submit"].form-control:focus {
 .divider-container {
   display: block;
   position: relative;
-  padding-bottom: 45px; 
+  padding-bottom: 45px;
 }
 
 .divider-line {
   display: inline-block; // important when hr is used as a separator between floated elements like bootstrap columns
   clear: both;
-  // I have to reduce margin-bottom with 10px because i found that 
+  // I have to reduce margin-bottom with 10px because i found that
   // there is additional 10px bottom space to hr! I don't know the reason
   margin: 80px auto 70px;
   width: calc(100% - 30px);
@@ -1265,7 +1265,7 @@ input[type="submit"].form-control:focus {
   display: block;
   position: relative;
   top: 60px;
-  clear: both;  
+  clear: both;
 }
 
 
@@ -1304,7 +1304,7 @@ input[type="submit"].form-control:focus {
   display: flex;
   // text-align: center;
   align-items: flex-start;  // verically center, flex-start or flex-end
-  justify-content: center;  // horizontally center, flex-start or flex-end 
+  justify-content: center;  // horizontally center, flex-start or flex-end
 
   i,
   img {
@@ -1328,7 +1328,7 @@ input[type="submit"].form-control:focus {
 
   /* Spaced */
   &.spaced {
-    align-items: center; // vertically center, flex-start or flex-end 
+    align-items: center; // vertically center, flex-start or flex-end
     padding: 10px;
     border-radius: 4px;
 
@@ -1473,7 +1473,7 @@ input[type="submit"].form-control:focus {
       }
     }
 } // < 480px width
-  
+
 
 
 /*  [ 13 ] - Social Icons
@@ -1582,7 +1582,7 @@ input[type="submit"].form-control:focus {
       }
     }
   }
-  
+
   /* Rounded */
   &.rounded {
     li a { border-radius: 999px; }
@@ -1645,7 +1645,7 @@ input[type="submit"].form-control:focus {
   border-radius: 10px;
   transition: all 0.2s;
   background-color: #fff;
-  
+
   .highlighted & {
     border-color: $theme-color;
     box-shadow: 0 0 50px 15px rgba($dark-color, 0.05);
@@ -1678,7 +1678,7 @@ input[type="submit"].form-control:focus {
     position: relative;
     margin-top: 5px;
   }
-  
+
   .ts-person {
     overflow: hidden;
     position: relative;
@@ -1718,7 +1718,7 @@ input[type="submit"].form-control:focus {
     }
   }
 } // < 768px width
-  
+
 @media (max-width: 480px) {
   .slider-testimonials .testimonial-single-1 {
     width: 100% !important;
@@ -1733,7 +1733,7 @@ input[type="submit"].form-control:focus {
     }
   }
 } // < 320px width
-  
+
 
 
 /*  [ 15 ] - Scroll Progress
@@ -1837,7 +1837,7 @@ input[type="submit"].form-control:focus {
     display: none !important;
   }
 } // < 992px width
-  
+
 
 
 
@@ -2001,7 +2001,7 @@ input[type="submit"].form-control:focus {
       z-index: 10;
       background-color: #fff;
       box-shadow: 0 0 15px rgba(0,0,0,0.10);
-      border-bottom-color: transparent;      
+      border-bottom-color: transparent;
     }
   }
 
@@ -2091,7 +2091,7 @@ input[type="submit"].form-control:focus {
     .hb-content {
       justify-content: center;
     }
-  }  
+  }
 } // < 992px width
 
 
@@ -2102,7 +2102,7 @@ input[type="submit"].form-control:focus {
     }
   }
 } // < 768px width
-  
+
 
 
 
@@ -2226,7 +2226,7 @@ input[type="submit"].form-control:focus {
   &.blured-bg {
     > .bg-element {
       -webkit-filter: blur(5px);
-              filter: blur(5px);      
+              filter: blur(5px);
     }
   }
 
@@ -2420,7 +2420,7 @@ input[type="submit"].form-control:focus {
     }
   }
 } // < 768px width
-  
+
 
 @media (max-width: 480px) {
   .slide-content {
@@ -2586,7 +2586,7 @@ body {
     }
 
     .banner-center-box {
-      
+
     }
   }
 
@@ -2615,7 +2615,7 @@ body {
     padding: 150px 0;
   }
 } // < 480px width
-  
+
 
 
 /* Box Form */
@@ -2639,7 +2639,7 @@ body {
     p {
       position: relative;
     }
-    
+
     h4 {
       margin-bottom: 0;
     }
@@ -2757,7 +2757,7 @@ body {
       &:last-child {
         top: 35px;
         margin-top: -10px;
-        
+
         img {
           position: absolute;
           right: -25px;
@@ -2790,7 +2790,7 @@ body {
 
     label:not(.error) {
       margin-top: -10px;
-    } 
+    }
   }
 }
 
@@ -2832,7 +2832,7 @@ body {
   .cta-subscribe {
     &,
     .layout-2 & {
-      display: inline-block;      
+      display: inline-block;
       // margin-top: 60px;
       width: 400px;
     }
@@ -2847,7 +2847,7 @@ body {
     .box-content {
       display: block;
     }
-    
+
     form {
       input[type="submit"] {
         height: 60px;
@@ -2988,7 +2988,7 @@ body {
     }
   }
 } // < 992px width
-  
+
 @media (max-width: 768px) {
   .cta-subscribe-2 {
     .popup-preview & {
@@ -3033,7 +3033,7 @@ body {
 
 } // < 992px width
 
-  
+
 
 
 /* CTA Subscribe Notifications */
@@ -3307,8 +3307,8 @@ select { option[disabled] { color: #ddd; } }
     &:hover {
       opacity: 1;
 
-      .hamburger-inner, 
-      .hamburger-inner::before, 
+      .hamburger-inner,
+      .hamburger-inner::before,
       .hamburger-inner::after {
         background-color: $theme-color;
       }
@@ -3319,8 +3319,8 @@ select { option[disabled] { color: #ddd; } }
       // width: 25px;
     }
 
-    .hamburger-inner, 
-    .hamburger-inner::before, 
+    .hamburger-inner,
+    .hamburger-inner::before,
     .hamburger-inner::after {
       // width: 25px;
       // background: #fff;
@@ -3348,7 +3348,7 @@ select { option[disabled] { color: #ddd; } }
 }
 
 
-// @at-root body#{&} 
+// @at-root body#{&}
 
 html {
   &::after {
@@ -3419,7 +3419,7 @@ html {
     .blog-standard {
       .post .post-content {
         padding: 0 50px;
-      }      
+      }
     }
   }
 
@@ -3447,7 +3447,7 @@ html {
   .section-content {
     .layout-2 & {
       // padding-top: 65px;
-      
+
     }
   }
 }
@@ -3651,7 +3651,7 @@ html {
   text-align: center;
   border-bottom: 4px solid transparent;
   transition: all 0.2s;
-  
+
   .highlighted & {
     border-color: $theme-color;
     box-shadow: 0 0 50px 15px rgba($dark-color, 0.05);
@@ -3677,7 +3677,7 @@ html {
       background-image: linear-gradient(45deg, $theme-color 0%, $theme-color-2 100%);
     }
   }
-  
+
   &.text-white {
     .box-content {
       color: $body-color;
@@ -3813,7 +3813,7 @@ html {
       border-radius: 100%;
       // width: 13px;
       // height: 13px;
-      
+
 
       &:hover span {
         opacity: 0.6;
@@ -4028,7 +4028,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;  
+  flex-direction: column;
   width: 140px;
   min-height: 140px;
   padding: 25px 20px;
@@ -4078,7 +4078,7 @@ html {
       font-size: 35px;
       color: $theme-color;
     }
-    
+
     h6 {
       margin-bottom: 0;
     }
@@ -4232,7 +4232,7 @@ html {
       border-radius: 100%;
       // width: 13px;
       // height: 13px;
-      
+
 
       &:hover span {
         opacity: 0.6;
@@ -4403,7 +4403,7 @@ html {
       border-radius: 100%;
       // width: 13px;
       // height: 13px;
-      
+
 
       &:hover span {
         opacity: 0.6;
@@ -4452,7 +4452,7 @@ html {
   visibility:hidden;
   display: inline-block;
 }
-  
+
 .counter-stats .digit .counter-animator {
   position:absolute;
   top:0;
@@ -4461,7 +4461,7 @@ html {
   right:0;
   overflow:hidden;
 }
-  
+
 .counter-stats .digit .counter-animator ul {
   list-style:none;
   margin:0;
@@ -4470,7 +4470,7 @@ html {
   transition: all 2s cubic-bezier(0.19, 1, 0.4, 1);
   // transition: all 1.5s ease;
 }
-  
+
 .counter-stats .digit .counter-animator ul li {
   margin-top:0;
 }
@@ -4484,7 +4484,7 @@ html {
 #clients-testimonials {
   &.parallax-section {
     .section-content {
-      
+
     }
   }
 }
@@ -4630,7 +4630,7 @@ html {
       border-radius: 100%;
       // width: 13px;
       // height: 13px;
-      
+
 
       &:hover span {
         opacity: 0.6;
@@ -4668,7 +4668,7 @@ html {
   &.flat-section {
 
   }
-  
+
   .section-content {
     padding: 160px 0 140px;
     background: url("../images/general-elements/cta-title-1-bg.png") no-repeat center;
@@ -4721,7 +4721,7 @@ html {
     }
   }
 } // < 768px width
-  
+
 @media (max-width: 480px) {
   #cta-title-1 {
     .section-content {
@@ -4759,7 +4759,7 @@ html {
  *    |
  *    |-->  [ 01 ] - Footer
  *    |-->  [ 02 ] - Footer Bars
- 
+
  */
 
 
@@ -4879,7 +4879,7 @@ html {
     }
   }
 } // < 768px width
-  
+
 
 
 
